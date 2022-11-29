@@ -15,7 +15,6 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
-
     body{
       background-color: hsl(218, 44%, 22%);
     }
@@ -24,9 +23,11 @@
       font-family: 'Outfit', sans-serif;
       font-weight: 700;
       color: hsl(218, 44%, 22%);
+      margin-top: 25px;
+      margin-bottom: 5px;
     }
 
-    h3{
+    p{
       font-family: 'Outfit', sans-serif;
       font-weight: 400;
       color: hsl(220, 15%, 55%);
@@ -39,16 +40,19 @@
       border-radius: 15px;
       background-color: hsl(212, 45%, 89%);
 
+      /* flex */
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      min-height: 80vh;
+
       /* alignments */
       justify-content: center;
       text-align: center;
       
       /* margins and paddings */
       padding: 15px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin: 15px auto;
     }
 
     .main img{
@@ -59,15 +63,17 @@
   </style>
 </head>
 <body>
-  <div class="main">
-    <img src="images/image-qr-code.png" alt="qr-code">
-    <h2>Improve your front-end skills by building projects</h2>
-    <h3>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</h3>
-  </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/GrendpaCornel09">GrendpaCornel09 on GitHub</a>.
-  </div>
+  <main>
+    <div class="main">
+      <img src="images/image-qr-code.png" alt="qr-code">
+      <h2>Improve your front-end skills by building projects</h2>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/GrendpaCornel09">GrendpaCornel09 on GitHub</a>.
+    </div>
+  </main>
 </body>
 </html>
